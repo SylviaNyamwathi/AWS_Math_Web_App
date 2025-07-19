@@ -6,12 +6,12 @@ This project demonstrates how to build a **fully functional web application on A
 
 ## 📌 Project Overview
 
-This repository contains the infrastructure and source code for a serverless math web app that allows users to:
+This repository contains the infrastructure and source code for a serverless **Math Web App** that allows users to:
 
-- Input two numbers
-- Choose a mathematical operation (addition, subtraction, multiplication, division)
-- View the result
-- Store the result in DynamoDB for future retrieval
+- Enter a base number and an exponent
+- Calculate the result of raising the base to the given power (e.g., 2^3 = 8)
+- View the result instantly in the browser
+- Store each calculation in DynamoDB for future reference
 
 ---
 
@@ -32,16 +32,10 @@ This repository contains the infrastructure and source code for a serverless mat
 1. **Frontend via Amplify**: A simple web interface is created and hosted using AWS Amplify. It sends user input to API Gateway.
 2. **API Gateway**: Routes HTTP requests to AWS Lambda.
 3. **Lambda**: Performs the math operations and optionally stores/retrieves data from DynamoDB.
-4. **DynamoDB**: Stores calculation history per user/session.
+4. **DynamoDB**: Stores calculation history per session.
 5. **IAM**: Provides the necessary permissions for services to communicate securely.
 
 ---
 
-## 🛠️ Setup Instructions
+🔗 **Live App**: [Click here to view the deployed app](https://dev.d2ehtjaip89vwa.amplifyapp.com/)
 
-### Prerequisites
-
-- AWS Account
-- AWS CLI configured
-- Node.js and npm
-- Amplify CLI (`npm install -g @aws-amplify/cli`)
